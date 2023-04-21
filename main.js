@@ -39,35 +39,39 @@ const glj = document.createElement('div')
 const gtj = document.createElement('div')
 
 // Create checkboxes for each athlete in roster
-function athleteCheckbox(roster, eventList) {
+function athleteCheckbox(roster, eventList, validity) {
     const newDiv = document.createElement('div');
+    
     newDiv.style.display = "flex";
     newDiv.style.flexDirection = "column";
     for (i=0; i<roster.length; i++) {
-        const subDiv = document.createElement('div');
         const newAthlete = roster[i]
-        const athlete = document.createElement('input');
-        athlete.type = "checkbox";
-        athlete.id = i;
-        athlete.value = ` ${newAthlete.first} ${newAthlete.last}`
-        subDiv.appendChild(athlete)
+        const eventType = validity
+        if (newAthlete[eventType]) {
+            const subDiv = document.createElement('div');
+            const athlete = document.createElement('input');
+            athlete.type = "checkbox";
+            athlete.id = i;
+            athlete.value = ` ${newAthlete.first} ${newAthlete.last}`
+            subDiv.appendChild(athlete)
 
-        const newText = document.createElement('span');
-        newText.innerHTML = athlete.value;
-        subDiv.appendChild(newText)
-     
-        athlete.addEventListener( "change", () => {
-            if (athlete.checked) {
-                eventList.push(athlete.value)
-            } else {
-                for (i=0; i<eventList.length; i++) {
-                    if (eventList[i] === athlete.value) {
-                        eventList.splice(i, 1)
+            const newText = document.createElement('span');
+            newText.innerHTML = athlete.value;
+            subDiv.appendChild(newText)
+        
+            athlete.addEventListener( "change", () => {
+                if (athlete.checked) {
+                    eventList.push(athlete.value)
+                } else {
+                    for (i=0; i<eventList.length; i++) {
+                        if (eventList[i] === athlete.value) {
+                            eventList.splice(i, 1)
+                        }
                     }
                 }
-            }
-        })
-        newDiv.appendChild(subDiv);
+            })
+            newDiv.appendChild(subDiv);
+        } 
     }
     return newDiv
 }
@@ -103,12 +107,11 @@ function getList() {
 }
 
 
-boys110.appendChild(athleteCheckbox(hurdlers.boys, boys110List));
-boys300.appendChild(athleteCheckbox(hurdlers.boys, boys300List));
-girls100.appendChild(athleteCheckbox(hurdlers.girls, girls100List));
-girls300.appendChild(athleteCheckbox(hurdlers.girls, girls300List));
-boysLj.appendChild(athleteCheckbox(jumpers.boys, boysLjList));
-boysTj.appendChild(athleteCheckbox(jumpers.boys, boysTjList));
-girlsLj.appendChild(athleteCheckbox(jumpers.girls, girlsLjList));
-girlsTj.appendChild(athleteCheckbox(jumpers.girls, girlsTjList));
-
+boys110.appendChild(athleteCheckbox(hurdlers.boys, boys110List, 'high'));
+boys300.appendChild(athleteCheckbox(hurdlers.boys, boys300List, 'low'));
+girls100.appendChild(athleteCheckbox(hurdlers.girls, girls100List, 'high'));
+girls300.appendChild(athleteCheckbox(hurdlers.girls, girls300List, 'low'));
+boysLj.appendChild(athleteCheckbox(jumpers.boys, boysLjList, 'long'));
+boysTj.appendChild(athleteCheckbox(jumpers.boys, boysTjList, 'triple'));
+girlsLj.appendChild(athleteCheckbox(jumpers.girls, girlsLjList, 'long'));
+girlsTj.appendChild(athleteCheckbox(jumpers.girls, girlsTjList, 'triple'));

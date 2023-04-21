@@ -4,9 +4,34 @@
     box-sizing: border-box;
 }
 
+.events {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    font-size:smaller;
+}
+.event {
+    margin: .5em 2em;
+    min-width: 25%;
+}
+
+.event > span {
+    font-weight: bold;
+}
+
+.title {
+    background: rgb(0, 56, 0);
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: large;
+    padding: .25em;
+}
+
 button {
     cursor: pointer;
-    margin: 1em 5% 0 5%;
+    margin: .5em 5% 1em 5%;
     padding: 1em;
     width: 90%;
     border-radius: 1em;
@@ -19,20 +44,26 @@ button:active {
     color: rgb(0, 56, 0);
     background: rgba(255, 255, 255, 0.961);
 }
-.events {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    font-size:smaller;
-}
-.event {
-    margin: 1em 2em;
-    min-width: 25%;
+
+#button1 {
+    display: none;
 }
 
-.event > span {
-    font-weight: bold;
+#button2 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    display: block;
 }
 
-li {
-    list-style: none;
+@media only screen and (max-width: 600px) {
+    .events {
+        grid-template-columns: 1fr;
+    }
+    #button1 {
+        display: block;
+    }
+    
+    #button2 {
+        display: none;
+    }
 }
