@@ -184,5 +184,12 @@ const hurdlers = {
             high: true,
             low: true,
         },
+        {
+            first: "Delaney",
+            last: "Augdahl",
+            grade: 9,
+            high: true,
+            low: true,
+        },
     ]
 }
