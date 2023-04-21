@@ -11,13 +11,13 @@ button {
     width: 90%;
     border-radius: 1em;
     background: rgb(0, 56, 0);
-    color: rgba(205, 205, 205, 0.961);
+    color: rgba(255, 255, 255, 0.961);
     font-size: large;
 }
 
 button:active {
     color: rgb(0, 56, 0);
-    background: rgba(205, 205, 205, 0.961);
+    background: rgba(255, 255, 255, 0.961);
 }
 .events {
     display: grid;

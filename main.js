@@ -29,14 +29,14 @@ const girlsLjList = [];
 const girlsTjList = [];
 
 // Unordered list divs for each event
-const b110 = document.createElement('ul')
-const b300 = document.createElement('ul')
-const g100 = document.createElement('ul')
-const g300 = document.createElement('ul')
-const blj = document.createElement('ul')
-const btj = document.createElement('ul')
-const glj = document.createElement('ul')
-const gtj = document.createElement('ul')
+const b110 = document.createElement('div')
+const b300 = document.createElement('div')
+const g100 = document.createElement('div')
+const g300 = document.createElement('div')
+const blj = document.createElement('div')
+const btj = document.createElement('div')
+const glj = document.createElement('div')
+const gtj = document.createElement('div')
 
 // Create checkboxes for each athlete in roster
 function athleteCheckbox(roster, eventList) {
@@ -69,7 +69,7 @@ function athleteCheckbox(roster, eventList) {
 // Takes lists of selected athletes and displays them
 function getAthletes(list, div) {
     for (i=0; i<list.length; i++) {
-        const entry = document.createElement('li');
+        const entry = document.createElement('p');
         console.log(list[i])
         entry.innerHTML = list[i]
         div.appendChild(entry)
