@@ -59,6 +59,12 @@ function athleteCheckbox(roster, eventList) {
         athlete.addEventListener( "change", () => {
             if (athlete.checked) {
                 eventList.push(athlete.value)
+            } else {
+                for (i=0; i<eventList.length; i++) {
+                    if (eventList[i] === athlete.value) {
+                        eventList.splice(i, 1)
+                    }
+                }
             }
         })
         newDiv.appendChild(subDiv);
@@ -70,7 +76,6 @@ function athleteCheckbox(roster, eventList) {
 function getAthletes(list, div) {
     for (i=0; i<list.length; i++) {
         const entry = document.createElement('p');
-        console.log(list[i])
         entry.innerHTML = list[i]
         div.appendChild(entry)
     }
@@ -79,6 +84,14 @@ function getAthletes(list, div) {
 
 // onClick function to call the getAthletes function for each list
 function getList() {
+    b110.innerHTML = '';
+    b300.innerHTML = '';
+    g100.innerHTML = '';
+    g300.innerHTML = '';
+    blj.innerHTML = '';
+    btj.innerHTML = '';
+    glj.innerHTML = '';
+    gtj.innerHTML = '';
     boys110Hurdles.appendChild(getAthletes(boys110List, b110))
     boys300Hurdles.appendChild(getAthletes(boys300List, b300))
     girls100Hurdles.appendChild(getAthletes(girls100List, g100))
