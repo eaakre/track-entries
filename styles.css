@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
 .events {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
