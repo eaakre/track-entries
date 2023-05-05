@@ -140,7 +140,7 @@ const hurdlers = {
             last: "Sacko",
             grade: 11,
             high: true,
-            low: false,
+            low: true,
         },
         {
             first: "Ejatu",
@@ -189,6 +189,13 @@ const hurdlers = {
             last: "Augdahl",
             grade: 9,
             high: true,
+            low: true,
+        },
+        {
+            first: "Emily",
+            last: "Simek",
+            grade: 9,
+            high: false,
             low: true,
         },
     ]
