@@ -190,8 +190,8 @@ function getList(coachDiv) {
             boys800run.appendChild(getAthletes(boys800List, b800)) 
             boys1600run.appendChild(getAthletes(boys1600List, b1600)) 
             boys3200run.appendChild(getAthletes(boys3200List, boys3200))
-            boys4x4drelay.appendChild(getAthletes(boys4400dList, b4400d)) 
-            boys4x8relay.appendChild(getAthletes(boys4800List, b4200)) 
+            boys4400drelay.appendChild(getAthletes(boys4400dList, b4400d)) 
+            boys4800relay.appendChild(getAthletes(boys4800List, b4200)) 
             break;
     }
     
