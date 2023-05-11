@@ -183,13 +183,13 @@ function getList(coachDiv) {
             boys400sdash.appendChild(getAthletes(boys400sList, b400s)) 
             boys4x1relay.appendChild(getAthletes(boys4100List, b4100)) 
             boys4x2relay.appendChild(getAthletes(boys4200List, b4200)) 
-            boys4x4srelay.appendChild(getAthletes(boys4400List, b4400s)) 
+            boys4x4srelay.appendChild(getAthletes(boys4400sList, b4400s)) 
             break;
         case amundDiv:
             boys400ddash.appendChild(getAthletes(boys400dList, b400d)) 
             boys800run.appendChild(getAthletes(boys800List, b800)) 
             boys1600run.appendChild(getAthletes(boys1600List, b1600)) 
-            boys3200run.appendChild(getAthletes(boys3200List, boys3200))
+            boys3200run.appendChild(getAthletes(boys3200List, b3200))
             boys4400drelay.appendChild(getAthletes(boys4400dList, b4400d)) 
             boys4800relay.appendChild(getAthletes(boys4800List, b4200)) 
             break;
