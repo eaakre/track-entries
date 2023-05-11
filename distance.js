@@ -1,4 +1,4 @@
-const sprinters = {
+const distance = {
     boys: [
         {
             first: "Noah",
