@@ -1,23 +1,9 @@
 const jumpers = {
     boys: [
         {
-            first: "Payton",
-            last: "McGregor",
-            grade: 12,
-            long: true,
-            triple: false,
-        },
-        {
             first: "Keyton",
             last: "McGregor",
             grade: 11,
-            long: true,
-            triple: false,
-        },
-        {
-            first: "Ian",
-            last: "Skari",
-            grade: 9,
             long: true,
             triple: false,
         },
@@ -77,13 +63,6 @@ const jumpers = {
             long: true,
             triple: false,
         },
-        {
-            first: "Terrence",
-            last: "Booth",
-            grade: 10,
-            long: true,
-            triple: true,
-        },
     ],
     girls: [
         {
@@ -118,13 +97,6 @@ const jumpers = {
             first: "Meghan",
             last: "Esposito",
             grade: 11,
-            long: true,
-            triple: false,
-        },
-        {
-            first: "McKenna",
-            last: "Gross",
-            grade: 9,
             long: true,
             triple: false,
         },
