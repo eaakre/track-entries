@@ -77,7 +77,7 @@ const hurdlers = {
             last: "Esposito",
             grade: 9,
             high: true,
-            low: true,
+            low: false,
         },
         {
             first: "Soludo",
@@ -111,7 +111,7 @@ const hurdlers = {
             first: "Michelle",
             last: "Gee",
             grade: 9,
-            high: true,
+            high: false,
             low: false,
         },
         {
@@ -147,7 +147,7 @@ const hurdlers = {
             last: "Caesar",
             grade: 10,
             high: true,
-            low: true,
+            low: false,
         },
         {
             first: "Delaney",
