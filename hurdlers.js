@@ -56,6 +56,13 @@ const hurdlers = {
             high: true,
             low: true,
         },
+        {
+            first: "Keyton",
+            last: "McGregor",
+            grade: 10,
+            high: true,
+            low: false,
+        },
     ],
     girls: [
         {
