@@ -5,8 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+
+    <script src="distance.js"></script>
     <script src="main.js" defer></script>
-    <title>Distance - Track Event Entries</title>
+    <script src="distanceEvents.js" defer></script>
+
+    <title>Distance</title>
 </head>
 <body>
     <nav>
@@ -20,8 +24,50 @@
     <div class="title">
         <h1>Distance Entries</h1>
     </div>
-    <div class="entries">
+    <button onclick="getList()" id="button1">Get Athletes</button>
+    <div class="events">
+        <div id="boys-distance">
+            <div class="boys-opens">
+                <div class="event" id="boys-400d"><span>Boys 400m Dash</span></div>
+                <div class="event" id="boys-800"><span>Boys 800m Run</span></div>
+                <div class="event" id="boys-1600"><span>Boys 1600m Run</span></div>
+                <div class="event" id="boys-3200"><span>Boys 3200m Run</span></div>
+            </div>
+            <div class="boys-relays">
+                <div class="event" id="boys-4x4d"><span>Boys 4x400 Relay</span></div>
+                <div class="event" id="boys-4x8"><span>Boys 4x800 Relay</span></div>
+            </div>
+        </div>
+        <div id="girls-distance">
+            <div class="girls-opens">
+                <div class="event" id="girls-400d"><span>Girls 400m Dash</span></div>
+                <div class="event" id="girls-800"><span>Girls 800m Run</span></div>
+                <div class="event" id="girls-1600"><span>Girls 1600m Run</span></div>
+                <div class="event" id="girls-3200"><span>Girls 3200m Run</span></div>
+            </div>
+            <div class="girls-relays">
+                <div class="event" id="girls-4x4d"><span>Girls 4x400 Relay</span></div>
+                <div class="event" id="girls-4x8"><span>Girls 4x800 Relay</span></div>
+            </div>
+        </div>
+        <button onclick="getList(amundList)" id="button1">Get Athletes</button>
+        <div id="athletes-going">
+            <div class="event" id="boys-400d-div"><span>Boys 400m Dash</span></div>
+            <div class="event" id="boys-800-div"><span>Boys 800m Run</span></div>
+            <div class="event" id="boys-1600-div"><span>Boys 1600m Run</span></div>
+            <div class="event" id="boys-3200-div"><span>Boys 3200m Run</span></div>
+            <div class="event" id="boys-4x4d-div"><span>Boys 4x400 Relay</span></div>
+            <div class="event" id="boys-4x8-div"><span>Boys 4x800 Relay</span></div>
+
+            <div class="event" id="girls-400d-div"><span>Girls 400m Dash</span></div>
+            <div class="event" id="girls-800-div"><span>Girls 800m Run</span></div>
+            <div class="event" id="girls-1600-div"><span>Girls 1600m Run</span></div>
+            <div class="event" id="girls-3200-div"><span>Girls 3200m Run</span></div>
+            <div class="event" id="girls-4x4d-div"><span>Girls 4x400 Relay</span></div>
+            <div class="event" id="girls-4x8-div"><span>Girls 4x800 Relay</span></div>
+        </div>
         
     </div>
+    <button onclick="getList(amundList)" id="button2">Get Athletes</button>
 </body>
 </html>
