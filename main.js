@@ -77,7 +77,7 @@ const boys800List = [];
 const boys1600List = [];
 const boys3200List = [];
 const boys4400dList = [];
-const boys4800dList = [];
+const boys4800List = [];
 
 // Unordered list divs for each event
 const b110 = document.createElement('div');
