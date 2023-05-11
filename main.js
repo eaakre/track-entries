@@ -51,6 +51,9 @@ const boys400ddash = document.getElementById('boys-400d-div');
 const boys800run = document.getElementById('boys-800-div');
 const boys1600run = document.getElementById('boys-1600-div');
 const boys3200run = document.getElementById('boys-3200-div');
+const boys4400drelay = document.getElementById('boys-4x4d-div');
+const boys4800relay = document.getElementById('boys-4x8-div');
+
 
 // Lists of selected athletes
 const boys110List = [];
@@ -181,6 +184,15 @@ function getList(coachDiv) {
             boys4x1relay.appendChild(getAthletes(boys4100List, b4100)) 
             boys4x2relay.appendChild(getAthletes(boys4200List, b4200)) 
             boys4x4srelay.appendChild(getAthletes(boys4400List, b4400)) 
+            break;
+        case amundDiv:
+            boys400ddash.appendChild(getAthletes(boys100List, b100)) 
+            boys800run.appendChild(getAthletes(boys200List, b200)) 
+            boys1600run.appendChild(getAthletes(boys400sList, b400s)) 
+            boys3200run.appendChild(getAthletes(boys3200List, boys3200))
+            boys4x4drelay.appendChild(getAthletes(boys4400List, b4400)) 
+            boys4x8relay.appendChild(getAthletes(boys4800List, b4200)) 
+            break;
     }
     
 }
