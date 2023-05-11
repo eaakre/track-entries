@@ -78,13 +78,6 @@ const jumpers = {
             triple: false,
         },
         {
-            first: "Ahmed",
-            last: "Al-Zenad",
-            grade: 11,
-            long: true,
-            triple: false,
-        },
-        {
             first: "Terrence",
             last: "Booth",
             grade: 10,
