@@ -92,6 +92,7 @@ button:active {
   display: flex;
   min-width: 200px;
   gap: 5px;
+  margin: 1px 0;
   /* position: relative;
   padding-left: 35px;
   cursor: pointer;
