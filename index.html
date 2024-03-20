@@ -1,59 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    
-    <script src="hurdlers.js" ></script>
-    <script src="jumpers.js" ></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- <script src="hurdlers.js"></script> -->
+    <script src="jumpers.js"></script>
     <script src="main.js" defer></script>
     <script src="hurdleEvents.js" defer></script>
 
     <title>Hurdles - Track Event Entries</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <ul class="navbar">
-            <li><a href="index.html">Aakre</a></li>
-            <li><a href="sprints.html">McKinnon</a></li>
-            <li><a href="distance.html">Amundson</a></li>
-        </ul>
+      <!-- <ul class="navbar">
+        <li><a href="index.html">Aakre</a></li>
+        <li><a href="sprints.html">McKinnon</a></li>
+        <li><a href="distance.html">Amundson</a></li>
+      </ul> -->
     </nav>
     <div class="title">
-        <h1>Hurdle/Jumps Entries</h1>
+      <h1>Jumps Entries</h1>
     </div>
-    
+
     <div class="events">
-        <div id="boys-hurdlers-check">
-            <div class="event" id="boys-110"><span>Boys 110 Hurdles</span></div>
-            <div class="event" id="boys-300"><span>Boys 300 Hurdles</span></div>
+      <!-- <div id="boys-hurdlers-check">
+        <div class="event" id="boys-110"><span>Boys 110 Hurdles</span></div>
+        <div class="event" id="boys-300"><span>Boys 300 Hurdles</span></div>
+      </div>
+      <div id="girls-hurdlers-check">
+        <div class="event" id="girls-100"><span>Girls 100 Hurdles</span></div>
+        <div class="event" id="girls-300"><span>Girls 300 Hurdles</span></div>
+      </div> -->
+      <div id="boys-jumps">
+        <div class="event" id="boys-lj"><span>Boys Long Jump</span></div>
+        <div class="event" id="boys-tj"><span>Boys Triple Jump</span></div>
+      </div>
+      <div id="girls-jumps">
+        <div class="event" id="girls-lj"><span>Girls Long Jump</span></div>
+        <div class="event" id="girls-tj"><span>Girls Triple Jump</span></div>
+      </div>
+      <button onclick="getList(aakreDiv)" id="button1">Get Athletes</button>
+      <div id="athletes-going">
+        <!-- <div class="event" id="boys-110-div"><span>Boys 110 Hurdles</span></div>
+        <div class="event" id="boys-300-div"><span>Boys 300 Hurdles</span></div>
+        <div class="event" id="girls-100-div">
+          <span>Girls 100 Hurdles</span>
         </div>
-        <div id="girls-hurdlers-check">
-            <div class="event" id="girls-100"><span>Girls 100 Hurdles</span></div>
-            <div class="event" id="girls-300"><span>Girls 300 Hurdles</span></div>
+        <div class="event" id="girls-300-div">
+          <span>Girls 300 Hurdles</span>
+        </div> -->
+        <div class="event" id="boys-lj-div"><span>Boys Long Jump</span></div>
+        <div class="event" id="boys-tj-div"><span>Boys Triple Jump</span></div>
+        <div class="event" id="girls-lj-div"><span>Girls Long Jump</span></div>
+        <div class="event" id="girls-tj-div">
+          <span>Girls Triple Jump</span>
         </div>
-        <div id="boys-jumps">
-            <div class="event" id="boys-lj"><span>Boys Long Jump</span></div>
-            <div class="event" id="boys-tj"><span>Boys Triple Jump</span></div>
-        </div>
-        <div id="girls-jumps">
-            <div class="event" id="girls-lj"><span>Girls Long Jump</span></div>
-            <div class="event" id="girls-tj"><span>Girls Triple Jump</span></div>
-        </div>
-        <button onclick="getList(aakreDiv)" id="button1">Get Athletes</button>
-        <div id="athletes-going">
-            <div class="event" id="boys-110-div"><span>Boys 110 Hurdles</span></div>
-            <div class="event" id="boys-300-div"><span>Boys 300 Hurdles</span></div>
-            <div class="event" id="girls-100-div"><span>Girls 100 Hurdles</span></div>
-            <div class="event" id="girls-300-div"><span>Girls 300 Hurdles</span></div>
-            <div class="event" id="boys-lj-div"><span>Boys Long Jump</span></div>
-            <div class="event" id="boys-tj-div"><span>Boys Triple Jump</span></div>
-            <div class="event" id="girls-lj-div"><span>Girls Long Jump</span></div>
-            <div class="event" id="girls-tj-div"><span>Girls Triple Jump</span></div>
-        </div>
-        <button onclick="getList(aakreDiv)" id="button2">Get Athletes</button>
+      </div>
     </div>
-</body>
+    <button onclick="getList(aakreDiv)" id="button2">Get Athletes</button>
+  </body>
 </html>
