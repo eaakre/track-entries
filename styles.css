@@ -84,15 +84,21 @@ button:active {
   display: block;
 }
 
-/* .athlete {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  cursor: pointer;
-  font-size: 20px;
+.approach {
+  margin-left: auto;
 }
 
-.athlete input {
+.athlete {
+  display: flex;
+  min-width: 200px;
+  gap: 5px;
+  /* position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 20px; */
+}
+
+/* .athlete input {
   position: absolute;
   opacity: 0;
   cursor: pointer;

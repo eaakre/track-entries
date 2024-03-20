@@ -142,13 +142,14 @@ function athleteCheckbox(roster, eventList, validity) {
       athlete.value = ` ${newAthlete.first} ${newAthlete.last}`;
       subDiv.appendChild(athlete);
 
-      // const checkmark = document.createElement("span");
-      // checkmark.classList.add("checkmark");
-      // subDiv.appendChild(checkmark);
-
       const newText = document.createElement("span");
       newText.innerHTML = athlete.value;
       subDiv.appendChild(newText);
+
+      const approach = document.createElement("span");
+      approach.innerHTML = newAthlete.approach;
+      approach.classList.add("approach");
+      subDiv.appendChild(approach);
 
       athlete.addEventListener("change", () => {
         if (athlete.checked) {
