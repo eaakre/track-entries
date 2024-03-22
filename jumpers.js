@@ -77,7 +77,7 @@ const jumpers = {
       grade: 11,
       long: true,
       triple: false,
-      approach: "",
+      approach: "79-3",
     },
     {
       first: "Payton",
@@ -85,7 +85,7 @@ const jumpers = {
       grade: 10,
       long: true,
       triple: false,
-      approach: "84-3",
+      approach: "77-9",
     },
     {
       first: "Anthony",
@@ -101,7 +101,7 @@ const jumpers = {
       grade: 9,
       long: true,
       triple: true,
-      approach: "",
+      approach: "73-4",
     },
     {
       first: "Mag",
@@ -174,7 +174,7 @@ const jumpers = {
       grade: 10,
       long: true,
       triple: false,
-      approach: "63-6",
+      approach: "62‐0",
     },
     {
       first: "Michelle",
@@ -199,6 +199,14 @@ const jumpers = {
       long: true,
       triple: false,
       approach: "63-8",
+    },
+    {
+      first: "Brooklyn",
+      last: "Kleingartner",
+      grade: 10,
+      long: true,
+      triple: false,
+      approach: "55-9",
     },
   ],
 };
