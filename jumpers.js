@@ -1,12 +1,5 @@
 const jumpers = {
   boys: [
-    // {
-    //     first: "Keyton",
-    //     last: "McGregor",
-    //     grade: 12,
-    //     long: true,
-    //     triple: false,
-    // },
     {
       first: "Joaquin",
       last: "Valdez",
@@ -37,7 +30,7 @@ const jumpers = {
       grade: 9,
       long: true,
       triple: true,
-      approach: "70-8",
+      approach: "75-9",
     },
     {
       first: "Bradyn",
@@ -45,7 +38,7 @@ const jumpers = {
       grade: 12,
       long: false,
       triple: true,
-      approach: "",
+      approach: "77-7",
     },
     {
       first: "Lance",
@@ -61,7 +54,7 @@ const jumpers = {
       grade: 11,
       long: true,
       triple: false,
-      approach: "90-9",
+      approach: "89-9",
     },
     {
       first: "Eli",
@@ -101,7 +94,7 @@ const jumpers = {
       grade: 9,
       long: true,
       triple: true,
-      approach: "73-4",
+      approach: "74-0",
     },
     {
       first: "Mag",
@@ -143,7 +136,7 @@ const jumpers = {
       grade: 12,
       long: true,
       triple: true,
-      approach: "62-9",
+      approach: "79-5" || 67-2,
     },
     {
       first: "McKenna",
@@ -206,7 +199,31 @@ const jumpers = {
       grade: 10,
       long: true,
       triple: false,
-      approach: "55-9",
+      approach: "57-9",
+    },
+    {
+      first: "Ejatu",
+      last: "Bah",
+      grade: 11,
+      long: true,
+      triple: false,
+      approach: "60-0",
+    },
+    {
+      first: "Hallie",
+      last: "Pritchard",
+      grade: 9,
+      long: true,
+      triple: false,
+      approach: "61-0",
+    },
+    {
+      first: "Ayla",
+      last: "Ridl",
+      grade: 9,
+      long: true,
+      triple: false,
+      approach: "69-0",
     },
   ],
 };
