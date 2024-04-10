@@ -22,7 +22,7 @@ const jumpers = {
       grade: 10,
       long: true,
       triple: true,
-      approach: "",
+      approach: "79-0",
     },
     {
       first: "Ben",
