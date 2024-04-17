@@ -77,7 +77,7 @@ const jumpers = {
       last: "Schaan",
       grade: 10,
       long: true,
-      triple: false,
+      triple: true,
       approach: "81-9",
     },
     {
@@ -103,14 +103,6 @@ const jumpers = {
       long: true,
       triple: true,
       approach: "81-11",
-    },
-    {
-      first: "Luis",
-      last: "Franssen",
-      grade: 9,
-      long: true,
-      triple: false,
-      approach: "80-5",
     },
     {
       first: "Ahmed",
