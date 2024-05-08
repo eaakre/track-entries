@@ -120,13 +120,21 @@ const jumpers = {
       triple: true,
       approach: "77-7",
     },
-{
+    {
       first: "Bonfas",
       last: "Loria",
       grade: 11,
       long: true,
-      triple: true,
+      triple: false,
       approach: "90-0",
+    },
+    {
+      first: "Baskal",
+      last: "Makuag",
+      grade: 11,
+      long: false,
+      triple: true,
+      approach: "74-0",
     },
   ],
   girls: [
