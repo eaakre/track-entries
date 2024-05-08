@@ -222,7 +222,7 @@ const jumpers = {
       last: "Bah",
       grade: 11,
       long: true,
-      triple: false,
+      triple: true,
       approach: "60-0",
     },
     {
