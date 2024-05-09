@@ -198,7 +198,7 @@ const jumpers = {
       last: "Esposito",
       grade: 10,
       long: true,
-      triple: false,
+      triple: true,
       approach: "66‐0",
     },
     {
