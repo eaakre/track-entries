@@ -136,6 +136,22 @@ const jumpers = {
       triple: true,
       approach: "75-0",
     },
+    {
+      first: "Cedric",
+      last: "Patterson",
+      grade: 10,
+      long: true,
+      triple: false,
+      approach: "85-0",
+    },
+    {
+      first: "Keyshawn",
+      last: "Noah",
+      grade: 10,
+      long: true,
+      triple: false,
+      approach: "76-0",
+    },
   ],
   girls: [
     {
