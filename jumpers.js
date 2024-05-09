@@ -134,7 +134,7 @@ const jumpers = {
       grade: 11,
       long: false,
       triple: true,
-      approach: "74-0",
+      approach: "75-0",
     },
   ],
   girls: [
@@ -144,7 +144,7 @@ const jumpers = {
       grade: 10,
       long: true,
       triple: true,
-      approach: "79-0 || 65-6 || 75-6 || 72",
+      approach: "79-0 || 65-6",
     },
     {
       first: "Meghan",
@@ -223,7 +223,7 @@ const jumpers = {
       grade: 11,
       long: true,
       triple: true,
-      approach: "60-0",
+      approach: "66-0",
     },
     {
       first: "Hallie",
