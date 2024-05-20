@@ -6,7 +6,7 @@ const jumpers = {
       grade: 9,
       long: true,
       triple: false,
-      approach: "81-7",
+      approach: "81-7 || 94-7",
     },
     {
       first: "Desire",
@@ -54,7 +54,7 @@ const jumpers = {
       grade: 11,
       long: true,
       triple: true,
-      approach: "89-9",
+      approach: "92-9",
     },
     {
       first: "Eli",
